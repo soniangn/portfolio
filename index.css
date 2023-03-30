@@ -1,0 +1,35 @@
+body {
+  background-color: #1b263b;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.coming-soon img {
+  width: 35%;
+  height: auto;
+}
+
+p {
+  text-align: center;
+  color: #778da9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+  .coming-soon img {
+    width: 50%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
