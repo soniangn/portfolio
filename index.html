@@ -9,34 +9,41 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/321c3f5b89.js"
       crossorigin="anonymous"
     ></script>
     <title>Sonia Nguyen</title>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
     <header>
+      <div class="logo">
+        <img src="images/logo_light.png" alt="" />
+      </div>
       <nav class="navbar">
-        <div class="logo">
-          <img src="images/logo_dark.png" alt="logo" />
-        </div>
-        <div class="right">
-          <a href="#a-propos" class="section">A propos</a>
-          <a href="#competences" class="section">Compétences</a>
-          <a href="#formation" class="section">Formations</a>
-          <a href="#experiences" class="section">Expériences</a>
-          <a href="#projets" class="section">Projets</a>
-          <a href="#contact" class="section">Contact</a>
-          <div>
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
-            </label>
-          </div>
-          <div class="dot"></div>
+        <ul>
+          <li><a href="#a-propos" class="section">A propos</a></li>
+          <li><a href="#competences" class="section">Compétences</a></li>
+          <li><a href="#formations" class="section">Formations</a></li>
+          <li><a href="#experiences" class="section">Expériences</a></li>
+          <li><a href="#projets" class="section">Projets</a></li>
+          <li><a href="#contact" class="section">Contact</a></li>
+        </ul>
+        <div class="toggle">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
         </div>
       </nav>
     </header>
@@ -54,12 +61,10 @@
 
     <main>
       <div class="section-presentation">
-        <div class="presentation-left">
-          <h1>Bonjour, je suis Sonia Nguyen.</h1>
-          <p class="student">étudiante en</p>
-          <div class="typing">
-            <span class="auto-type"></span>
-          </div>
+        <p class="student">étudiante en</p>
+        <div class="container">
+          <div class="study"><span class="auto-type"></span></div>
+        </div>
           <div id="button-wrap">
             <a href="./images/CV_NGUYEN_Sonia.pdf" class="btn-slide" download>
               <span class="circle"
@@ -70,35 +75,33 @@
             </a>
           </div>
         </div>
-        <div class="presentation-right">
-          <img src="images/picture.png" alt="selfie" />
-        </div>
       </div>
 
-      <div class="a-propos" id="a-propos">
+      <div class="a-propos content-section" id="a-propos">
         <h2>A propos</h2>
+        <div class="picture">
+          <img src="images/picture.png" alt="" />
+        </div>
+        <h1>Bonjour, je suis Sonia Nguyen.</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-          in totam pariatur architecto facere numquam ratione iste doloribus
-          similique impedit, dicta iusto odio perspiciatis ab! Repellat ex
-          deserunt nemo natus! Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Fugiat, voluptatibus voluptatem vel impedit, quo ex
-          possimus dolores repellendus labore magnam enim fugit, facere ipsum.
-          Dignissimos magni dolore architecto est et. Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Dolorem quas repudiandae deleniti
-          quam officiis saepe. Harum vero odit quod voluptas magnam quaerat
-          deleniti, atque dignissimos alias ut asperiores consequuntur commodi.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsum
-          sit explicabo odit nihil dolorum cumque earum modi rem consequuntur,
-          expedita, voluptas vero sapiente nisi iure, fugiat rerum? Dolorem,
-          aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-          fuga molestiae vitae dignissimos maiores. Eligendi optio a ratione,
-          beatae aut nam ut rerum quos laudantium ipsum provident, dolorem nihil
-          sequi.
+          Créative, rigoureuse et fiable, j'ai évolué en tant que consultante en
+          affaires réglementaires pendant 7 ans. Dans une démarche de
+          reconversion professionnelle et ayant déjà eu par le passé une
+          appétence pour le code, j'ai décidé d'entamer une transition
+          professionnelle vers le métier de DevOps. Consciente de la nécessité
+          de maîtriser tout d’abord des langages de programmation, la première
+          étape de mon projet est de me former dans le développement web
+          full-stack. Pour ce faire, je suis une formation chez Holberton School
+          qui me permet de mener de multiples projets et d'acquérir des bases
+          solides en programmation. En parallèle de cette formation complète de
+          deux ans, je me forme chez DataScientest au métier d’Administratrice
+          Systèmes DevOps. Ce cursus me permet d’approfondir mes connaissances
+          en Python, d’apprendre la conception de scripts et d’évoluer dans un
+          environnement Agile.
         </p>
       </div>
 
-      <div class="competences" id="competences">
+      <div class="competences content-section" id="competences">
         <h2>Compétences</h2>
         <div class="competences-section">
           <div class="competences-left">
@@ -113,8 +116,8 @@
               <p>MYSQL</p>
               <p>SQLAlchemy</p>
               <p>Git/GitHub</p>
-              <p>Visual Studio Code</p>
               <p>Bash</p>
+              <p>Visual Studio Code</p>
             </div>
           </div>
           <div class="competences-right">
@@ -122,112 +125,152 @@
             <div class="soft-skills">
               <p>Méthode Agile</p>
               <p>Logique</p>
+              <p>Esprit d'équipe</p>
               <p>Persévérance</p>
               <p>Capacité à résoudre des problèmes</p>
               <p>Adaptabilité</p>
-              <p>Rigueur / Organisation</p>
-              <p>Esprit d'équipe</p>
               <p>Ecoute / Empathie</p>
+              <p>Rigueur / Organisation</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="formations" id="formations">
+      <div class="formations content-section" id="formations">
         <h2>Formations</h2>
-        <div class="container">
-          <div class="tabs">
-            <h3 class="active">Conceptrice Développeuse d'applications</h3>
-            <h3>Administratrice Système DevOps</h3>
-            <h3>MS Management des Industries de la Santé</h3>
-            <h3>Master Recherche Immunologie</h3>
-            <h3>Licence Biologie</h3>
+        <div class="hero">
+          <div class="btn-box">
+            <button id="btn1" onclick="openHolberton()">
+              Conceptrice Développeuse d'Application
+            </button>
+            <button id="btn2" onclick="openDataScientest()">
+              Administratrice Système DevOps
+            </button>
+            <button id="btn3" onclick="openTBS()">
+              MS Management des Industries de la Santé
+            </button>
+            <button id="btn4" onclick="openUPMC1()">
+              Master Recherche en Immunologie
+            </button>
+            <button id="btn5" onclick="openUPMC2()">
+              Licence Sciences de la Vie
+            </button>
           </div>
-          <div class="tab-content">
-            <div class="active">
-              <h4>Holberton School</h4>
-              <h5>Présent</h5>
+
+          <div id="content1" class="content">
+            <div class="content-left">
+              <h3>Holberton School</h3>
+              <p>Titre RNCP niveau 6 | en cours</p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                possimus itaque repudiandae temporibus quia veritatis tempore
-                ratione deserunt dignissimos libero voluptates alias quisquam
-                rerum nesciunt molestiae ipsa fugiat, delectus enim? Sed
-                assumenda quisquam beatae hic alias dolores temporibus placeat
-                a, repellat nisi ullam. Neque, nesciunt tempore. Autem dolore
-                animi at error voluptatem sapiente. Natus, commodi vel illo
-                magnam corrupti cum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis sit accusamus sed deleniti unde quisquam dicta,
+                adipisci sunt provident quaerat aut recusandae aliquid, atque
+                deserunt pariatur veritatis fugiat vitae?
               </p>
             </div>
-            <div>
-              <h4>DataScientest</h4>
-              <h5>Présent</h5>
+            <div class="content-right">
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <div id="content2" class="content">
+            <div class="content-left">
+              <h3>DataScientest</h3>
+              <p>Titre RNCP niveau 6 | en cours</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime doloremque blanditiis deserunt quo aspernatur illo, qui deleniti dolorum eligendi consequatur dolor reiciendis facilis. Id eos ratione totam excepturi tempora.
+            </div>
+            <div class="content-right">
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <div id="content3" class="content">
+            <div class="content-left">
+              <h3>Toulouse Business School</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                possimus itaque repudiandae temporibus quia veritatis tempore
-                ratione deserunt dignissimos libero voluptates alias quisquam
-                rerum nesciunt molestiae ipsa fugiat, delectus enim? Sed
-                assumenda quisquam beatae hic alias dolores temporibus placeat
-                a, repellat nisi ullam. Neque, nesciunt tempore. Autem dolore
-                animi at error voluptatem sapiente. Natus, commodi vel illo
-                magnam corrupti cum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis sit accusamus sed deleniti unde quisquam dicta,
+                adipisci sunt provident quaerat aut recusandae aliquid, atque
+                deserunt pariatur veritatis fugiat vitae?
               </p>
             </div>
-            <div>
-              <h4>Toulouse Business School</h4>
-              <h5>2014</h5>
+            <div class="content-right">
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <div id="content4" class="content">
+            <div class="content-left">
+              <h3>Université Pierre & Marie Curie</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                possimus itaque repudiandae temporibus quia veritatis tempore
-                ratione deserunt dignissimos libero voluptates alias quisquam
-                rerum nesciunt molestiae ipsa fugiat, delectus enim? Sed
-                assumenda quisquam beatae hic alias dolores temporibus placeat
-                a, repellat nisi ullam. Neque, nesciunt tempore. Autem dolore
-                animi at error voluptatem sapiente. Natus, commodi vel illo
-                magnam corrupti cum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis sit accusamus sed deleniti unde quisquam dicta,
+                adipisci sunt provident quaerat aut recusandae aliquid, atque
+                deserunt pariatur veritatis fugiat vitae?
               </p>
             </div>
-            <div>
-              <h4>Université Pierre & Marie Curie</h4>
-              <h5>2010</h5>
+            <div class="content-right">
+              <img src="" alt="" />
+            </div>
+          </div>
+
+          <div id="content5" class="content">
+            <div class="content-left">
+              <h3>Université Pierre & Marie Curie</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                possimus itaque repudiandae temporibus quia veritatis tempore
-                ratione deserunt dignissimos libero voluptates alias quisquam
-                rerum nesciunt molestiae ipsa fugiat, delectus enim? Sed
-                assumenda quisquam beatae hic alias dolores temporibus placeat
-                a, repellat nisi ullam. Neque, nesciunt tempore. Autem dolore
-                animi at error voluptatem sapiente. Natus, commodi vel illo
-                magnam corrupti cum?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
+                nisi? Dignissimos minima temporibus repudiandae in. Minus magni
+                at deleniti? Sequi ea doloribus officia neque enim, voluptas
+                voluptatum velit exercitationem at.
               </p>
             </div>
-            <div>
-              <h4>Université Pierre & Marie Curie</h4>
-              <h5>2008</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
-                possimus itaque repudiandae temporibus quia veritatis tempore
-                ratione deserunt dignissimos libero voluptates alias quisquam
-                rerum nesciunt molestiae ipsa fugiat, delectus enim? Sed
-                assumenda quisquam beatae hic alias dolores temporibus placeat
-                a, repellat nisi ullam. Neque, nesciunt tempore. Autem dolore
-                animi at error voluptatem sapiente. Natus, commodi vel illo
-                magnam corrupti cum?
-              </p>
+            <div class="content-right">
+              <img src="" alt="" />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiences content-section" id="experiences">
+        <h2>Expériences</h2>
+        <div class="timeline-container">
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="timeline-content">
+                  <h4 class="date">Depuis février 2015</h4>
+                  <h3>Consultante en Affaires Réglementaires</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h4 class="date">2013</h4>
+                  <h3>Cheffe de Marque Junior</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h4 class="date">Février 2011 - Août 2013</h4>
+                  <h3>Heading 3</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h4 class="date">2009, 2010</h4>
+                  <h3>Assistante de Recherche</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </main>
 
     <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".auto-type", {
-        strings: ["Développement fullstack", "DevOps"],
-        typeSpeed: 50,
-        backSpeed: 15,
-        loop: true,
-      });
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
