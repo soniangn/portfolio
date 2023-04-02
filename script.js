@@ -1,3 +1,17 @@
+jQuery(document).on("scroll", function () {
+  var pageTop = jQuery(document).scrollTop();
+  var pageBottom = pageTop + jQuery(window).height();
+  var tags = jQuery("p, div, span");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags;
+
+    if (jQuery(tag).position().top < pageBottom) {
+      jQuery(tag).addClass("visible");
+    }
+  }
+});
+
 /* TOGGLE */
 const chk = document.getElementById("chk");
 

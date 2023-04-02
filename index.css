@@ -30,7 +30,13 @@ body {
 /* NAVBAR */
 .navbar {
   width: 100%;
+  margin-top: 10px;
+  height: 90px;
   margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 13px 13px;
 }
 
 .navbar ul {
@@ -90,6 +96,7 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 .toggle {
@@ -317,16 +324,16 @@ h2 {
   height: 600px;
   color: var(--second-color);
   position: relative;
-  background-color: var(--fifth-color);
   padding: 20px 0;
 }
 
 .picture {
-    text-align: center;
+  text-align: center;
 }
 
 .picture img {
   height: 200px;
+  
 }
 
 .a-propos::before {
@@ -350,6 +357,7 @@ h2 {
   position: relative;
   height: 400px;
   padding-top: 80px;
+    background-color: var(--fifth-color);
 }
 
 .competences h2::before {
@@ -420,7 +428,6 @@ h2 {
 .formations {
   position: relative;
   padding: 50px 0;
-  background-color: var(--fifth-color);
   height: 480px;
 }
 
@@ -501,6 +508,7 @@ h2 {
 /* EXPERIENCES */
 .experiences {
   position: relative;
+
   padding: 50px 0;
 }
 
@@ -538,8 +546,12 @@ h2 {
 
 .timeline ul li {
   padding: 20px;
-  background-color: var(--second-color);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: var(--second-color);
   border-radius: 10px;
   margin: 10px 0 20px 0;
 }
